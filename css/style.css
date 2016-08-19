@@ -1,7 +1,4 @@
 /*===== common ========*/
-@font-face{
-	font-family: 
-}
 
 body, .menu-hoz li, h4.name-game{
 	font-family: Roboto;
@@ -172,7 +169,7 @@ header{
 	background: #FF6601;
 	color: #fff;
 }
-li.active a {
+.menutab li.active a {
     background: #ff6601 none repeat scroll 0 0 !important;
 }
 .menutab .nav-tabs > li > a:hover {
@@ -504,6 +501,23 @@ ul.slides img {
 
 
 /*slick-slider*/
+.slider {
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
 .slider{
 	position: relative;
 }
