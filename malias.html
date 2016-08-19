@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <META name="description" content="malias: game for pc ">
+
+    <title>Malias </title>
+ 
+
+    <!-- Core -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Font awsesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+
+   
+
+   
+
+<style>
+   .slider {
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+</style>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+
+
+    
+       <header>
+           <div class="container">
+               <div class="console-1">
+                    <div class="row">
+                       <div class="left-console pull-left col-sm-6 col-md-6 col-xs-12">
+                           <ul class="list-unstyled list-inline">
+                               <li>Loại tiền</li>
+                               <li>
+                                   <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">USD
+                                    <span class="caret"></span></button>
+                                    <ul style="display: none;" class="dropdown-menu">
+                                      <li><a href="javascript: void(0)">VND</a></li>
+                                      <li><a href="javascript: void(0)">YN</a></li>
+                                      <li><a href="javascript: void(0)">EURO</a></li>
+                                     </ul>
+                                  </div>
+                               </li>
+                               <li>Ngôn ngữ</li>
+                               <li>
+                                   <div class="dropdown">
+                                    <button data-toggle="dropdown" type="button" class="btn btn-default dropdown-toggle"><img src="images/flag-vn.png" alt="not found">&nbsp;VN
+                                    <span class="caret"></span></button>
+                                    <ul style="display: none;" class="dropdown-menu">
+                                      <li><a href="javascript: void(0)"><img src="images/flag-vn.png" alt="not found">&nbsp;ENG</a></li>
+                                      <li><a href="javascript: void(0)"><img src="images/flag-vn.png" alt="not found">&nbsp;CHI</a></li>
+                                     </ul>
+                                  </div>
+                               </li>
+                           </ul>
+                       </div>
+                       <div class="right-console col-sm-6 col-md-6 col-xs-12">
+                           <ul class="list-unstyled list-inline pull-right">
+                               <li><img class="pull-left" alt="not found" src="images/dangky.png">&nbsp;<a href="javascript: void(0)">Đăng ký</a></li>
+                               <li><img class="pull-left" alt="not found" src="images/taikhoan.png">&nbsp;<a href="javascript: void(0)">Đăng nhập</a></li>
+                               <li><img class="pull-left" alt="not found" src="images/taikhoan.png">&nbsp;<a href="javascript: void(0)">Tài khoản</a></li>
+                           </ul>
+                       </div>
+                    </div>
+               </div>
+               <!-- ==== End console-1 === -->
+
+                <div class="console-2">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="logo"></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="adv-search" class="input-group">
+                                <input type="text" placeholder="Tìm kiếm" class="form-control">
+                                <div class="input-group-btn">
+                                    <div role="group" class="btn-group">
+                                       <button style="padding:6px 12px;" class="btn btn-primary" type="button"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="list-unstyled list-inline cs2-cart">
+                                <li class="pull-left"><img alt="not found" src="images/cart.png"></li>
+                                <li>Giỏ hàng của bạn <br>
+                                    <span> (0)</span>sản phẩm - <span>345.000đ</span>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==== End console-2=== -->
+  
+
+        <nav class="navbar navbar-default bg-nav">
+           <div class="container">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header">
+                   <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </button>
+                   <!-- <a class="navbar-brand" href="#">Title</a> -->
+               </div>
+       
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse navbar-ex1-collapse">
+                   <ul class="nav navbar-nav menu-hoz">
+                        <li class="">
+                            <a href="javascript: void(0)">Xbox One</a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)">PS4</a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)">Xbox 360</a>
+                        </li>
+                        <li class="dropdown">
+                           <a data-toggle="dropdown" class="dropdown-toggle" href="#">PS3 <b class="caret"></b></a>
+                            <div style="height:auto;width:559px;margin-left:-46px;padding:25px;" class="dropdown-menu">            <!--  =================INLINE========== -->
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="list-unstyled">
+                                            <li class="title-submn"><a href="">Hot Right now</a></li>
+                                            <li><img alt="not found" src="images/booksubmn.png"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <ul class="list-unstyled">
+                                            <li class="title-submn"><a href="">Will U Games</a></li>
+                                            <li><a href="">All</a></li>
+                                            <li><a href="">Actions</a></li>
+                                            <li><a href="">Collectibles</a></li>
+                                            <li><a href="">eShop</a></li>
+                                            <li><a href="">Fighting</a></li>
+                                            <li><a href="">Music &amp; Party</a></li>
+                                            <li><a href="">Puzzle &amp; Cards</a></li>
+                                            <li><a href="">Role - Playing</a></li>
+                                            <li><a href="">Shooter</a></li>
+                                            <li><a href="">Sports</a></li>
+                                            <li><a href="">Strategy</a></li>
+                                            <li><a href="">Strategy Guides</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <ul class="list-unstyled">
+                                            <li class="title-submn"><a href="">PS3 Deals</a></li>
+                                            <li><a href="">Price Drop</a></li>
+                                            <li><a href="">Under $20</a></li>
+                                        </ul>
+
+                                        <ul class="list-unstyled">
+                                            <li class="title-submn"><a href="">Under $20</a></li>
+                                            <li><a href="">Batteries &amp; Chargers</a></li>
+                                            <li><a href="">Cable &amp; Adaptors</a></li>
+                                            <li><a href="">Controllers</a></li>
+                                            <li><a href="">Cooling Systems</a></li>
+                                            <li><a href="">Game Systems</a></li>
+                                            <li><a href="">Gaming Furniture</a></li>
+                                            <li><a href="">Headsets &amp; Mics</a></li>
+                                        </ul> 
+                                    </div>
+                                    <div class="col-md-3">
+                                        <ul class="list-unstyled">
+                                            <li class="title-submn"><a href="">PS4 Hardware</a></li>
+                                            <li><a href="">Game Systems</a></li>
+                                        </ul>
+
+                                        <ul class="list-unstyled">
+                                            <li class="title-submn"><a href="">PS3 Figures</a></li>
+                                            <li><a href="">Disney Infinity</a></li>
+                                            <li><a href="">Skylanders</a></li>
+                                        </ul>
+
+                                        <ul class="list-unstyled">
+                                            <li class="title-submn"><a href="">Shop PS4 by ESRB</a></li>
+                                            <li><a href="">Everyone</a></li>
+                                            <li><a href="">Everyone 10+</a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)">PC</a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)">Will U</a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)">3DS</a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)">PS Vita</a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)">Collectibles</a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)">Electronics</a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)">More</a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)">Pre-Own</a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)">Trade Values</a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0)">Deals</a>
+                        </li>
+
+
+                    </ul>
+               </div><!-- /.navbar-collapse -->
+           </div>
+        </nav>
+        <!-- End nav -->
+       </header>
+       
+
+       <div class="wrap-content" style="position:relative;"> <!-- INLINE -->
+           <div class="adv-left hidden-xs"><img src="images/cgd/adv-left.png" alt="not found" class="img-responsive"></div>
+           <div class="adv-right hidden-xs"><img src="images/cgd/adv-right.png" alt="not found" class="img-responsive"></div>
+           <div class="container" style="background: #fff none repeat scroll 0 0;position: relative;z-index: 99"> <!-- INLINE -->
+              <section class="banner">
+                <button type="button" class="btn btn-default">buy now</button>
+              </section>
+
+              <section class="feature">
+                   <div class="row">
+                       <div class="col-md-8">
+                         
+                            <div class="flexslider " id="hero-slider">
+                              <ul class="slides list-inline">
+                                <li><img alt="notfound" src="images/bg-top2.jpg" class="img-reponsive" width="745" height="370"></li>
+                                <li><img alt="notfound" src="images/bg-top1.jpg" class="img-reponsive" width="745" height="370"></li>
+                                <li><img alt="notfound" src="images/bg-top3.jpg" class="img-reponsive" width="745" height="370"></li>
+                                <li><img alt="notfound" src="images/bg-top2.jpg" class="img-reponsive" width="745" height="370"></li>
+                              </ul>
+
+
+                              
+                            </div>
+                            
+                          
+                       </div>
+                       <div class="col-md-4 menutab">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#home">sản phẩm nổi bật</a></li>
+                                <li><a data-toggle="tab" href="#menu1">sản phẩm mới</a></li>
+                                <li><a data-toggle="tab" href="#menu2">tin tức</a></li>
+                           
+                            </ul>
+
+                            <div class="tab-content tab-feature">
+                                <div id="home" class="tab-pane fade in active">
+                                  <ul>
+                                      <li>
+                                        <a href="">Rise of the Tomb Raider</a>
+                                          <span >
+                                            <span class="price pull-right">250.000đ</span>
+                                            <span class="sale-off pull-right">&#45;25&#37;</span>
+                                          </span>
+                                      </li>
+                                      <li>
+                                        <a href="">Rise of the Tomb Raider</a>
+                                          <span >
+                                            <span class="price pull-right">250.000đ</span>
+                                            <span class="sale-off pull-right">&#45;25&#37;</span>
+                                          </span>
+                                      </li><li>
+                                        <a href="">Rise of the Tomb Raider</a>
+                                          <span >
+                                            <span class="price pull-right">250.000đ</span>
+                                            <span class="sale-off pull-right">&#45;25&#37;</span>
+                                          </span>
+                                      </li>
+                                      <li>
+                                        <a href="">Rise of the Tomb Raider</a>
+                                          <span >
+                                            <span class="price pull-right">250.000đ</span>
+                                            <span class="sale-off pull-right">&#45;25&#37;</span>
+                                          </span>
+                                      </li>
+                                      <li>
+                                        <a href="">Rise of the Tomb Raider</a>
+                                          <span >
+                                            <span class="price pull-right">250.000đ</span>
+                                            <span class="sale-off pull-right">&#45;25&#37;</span>
+                                          </span>
+                                      </li>
+                                      <li>
+                                        <a href="">Rise of the Tomb Raider</a>
+                                          <span >
+                                            <span class="price pull-right">250.000đ</span>
+                                            <span class="sale-off pull-right">&#45;25&#37;</span>
+                                          </span>
+                                      </li>
+                                      <li>
+                                        <a href="">Rise of the Tomb Raider</a>
+                                          <span >
+                                            <span class="price pull-right">250.000đ</span>
+                                            <span class="sale-off pull-right">&#45;25&#37;</span>
+                                          </span>
+                                      </li>
+                                      <li>
+                                        <a href="">Rise of the Tomb Raider</a>
+                                          <span >
+                                            <span class="price pull-right">250.000đ</span>
+                                            <span class="sale-off pull-right">&#45;25&#37;</span>
+                                          </span>
+                                      </li>
+                                      <li>
+                                        
+                                        <ul class="list-inline pull-right paginate" >
+                                          
+                                          <li><a href="#">1</a></li>
+                                          <li><a href="#">2</a></li>
+                                          <li><a href="#">3</a></li>
+                                          <li><a href="#">4</a></li>
+                                          <li><a href="#">5</a></li>
+                                          <li><a href="#">»</a></li>
+                                        </ul>
+                                      </li>
+                                          
+                                        
+                                  </ul>
+                                </div>
+                                <div id="menu1" class="tab-pane fade">
+                                  <h3>Menu 1</h3>
+                                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                                <div id="menu2" class="tab-pane fade">
+                                  <h3>Menu 2</h3>
+                                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+              </section> <!-- End feature -->
+
+              <div class="" style="padding: 25px 5px;"><img style="margin: 25px 1px 25px 5px;" class="img-responsive " src="images/bg-top3.jpg" alt="not found"></div> <!-- INLINE -->
+
+              <section class="hot-product">
+                    <div class="wrap-hpd-1 ">
+
+                        <ul class="list-unstyled list-inline opt-product">
+                            <li><a href="">sản phẩm giảm giá</a></li>
+                            <li><a href="">sản phẩm hot nhất</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="wrap-hpd-2 row">
+                            <div class="col-md-2 col-md-offset-1 col-sm-6  col-xs-12">
+                              <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-1">
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button type="button" class="btn btn-default"><img src="images/cart-pro.png" alt="not found">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-2">
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button type="button" class="btn btn-default"><img src="images/cart-pro.png" alt="not found">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 ">
+                                <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-3">
+                                        
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button type="button" class="btn btn-default"><img src="images/cart-pro.png" alt="not found">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 ">
+                              <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-4">
+                                        
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button type="button" class="btn btn-default"><img src="images/cart-pro.png" alt="not found">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-5">
+                                        
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button type="button" class="btn btn-default"><img src="images/cart-pro.png" alt="not found">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                  
+              </section> <!-- End hot-product -->
+
+              <section class="catalogue" > 
+                <div class="opt-cata wrap-hpd-1">
+                  <h2 class="pull-left">catalogue</h2>
+                  <a class="pull-right" href="javascript: void(0)">Xem tất cả</a>
+                </div>
+
+                <div class="wrap-cate">
+                  <div class="row">
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="box-cate">
+                          <h3>giá trị game</h3>
+                          <img src="images/cgd/r1-l1.png" alt="not found" class="img-responsive">
+                          <a class="btn " href="javascript: void(0)">BOGOHP on pre-owned games<i class="fa fa-caret-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="box-cate">
+                          <h3>giá trị game</h3>
+                          <img src="images/cgd/r1-l2.png" alt="not found" class="img-responsive">
+                          <a class="btn " href="javascript: void(0)">Apple, Android and Windowns Devices<i class="fa fa-caret-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="box-cate">
+                          <h3>giá trị game</h3>
+                          <img src="images/cgd/r1-l3.png" alt="not found" class="img-responsive">
+                          <a class="btn " href="javascript: void(0)">When you buy two selected downloads<i class="fa fa-caret-right"></i></a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="box-cate">
+                      <h3>giá trị game</h3>
+                      <img src="images/cgd/r2-l1.png" alt="not found" class="img-responsive">
+                      <a class="btn " href="javascript: void(0)">Save more on these accessories<i class="fa fa-caret-right"></i></a>
+                    </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="box-cate">
+                        <h3>giá trị game</h3>
+                        <img src="images/cgd/r2-l2.png" alt="not found" class="img-responsive">
+                        <a class="btn " href="javascript: void(0)">Just announced, pre-order now<i class="fa fa-caret-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="box-cate">
+                        <h3>giá trị game</h3>
+                        <img src="images/cgd/r2-l3.png" alt="not found" class="img-responsive">
+                        <a class="btn " href="javascript: void(0)">Greate accessories from preferred sellers<i class="fa fa-caret-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="preorder">
+                    <h2>Pre&#45;order Now &#45; Only at <span style="color:#A12283">Game</span></h2>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="box-cate">
+                          <h3>giá trị game</h3>
+                          <img src="images/cgd/r3-l1.png" alt="not found" class="img-responsive">
+                          <a class="btn " href="javascript: void(0)">Feturing extra missions and gameplay<i class="fa fa-caret-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="box-cate">
+                          <h3>giá trị game</h3>
+                          <img src="images/cgd/r3-l2.png" alt="not found" class="img-responsive">
+                          <a class="btn " href="javascript: void(0)">Receive two bonus character packs&#33;<i class="fa fa-caret-right"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="box-cate">
+                          <h3>giá trị game</h3>
+                          <img src="images/cgd/r3-l3.png" alt="not found" class="img-responsive">
+                          <a class="btn " href="javascript: void(0)">Exclusive Steelbook edition&#33;<i class="fa fa-caret-right"></i></a>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="box-cate">
+                      <h3>giá trị game</h3>
+                      <img src="images/cgd/r4-l1.png" alt="not found" class="img-responsive">
+                      <a class="btn " href="javascript: void(0)">Get an exclusive case and soundtrack&#33;<i class="fa fa-caret-right"></i></a>
+                    </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="box-cate">
+                        <h3>giá trị game</h3>
+                        <img src="images/cgd/r4-l2.png" alt="not found" class="img-responsive">
+                        <a class="btn " href="javascript: void(0)">Includes bonus skins and upgrades&#33; <i class="fa fa-caret-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="box-cate">
+                        <h3>giá trị game</h3>
+                        <img src="images/cgd/r4-l3.png" alt="not found" class="img-responsive">
+                        <a class="btn " href="javascript: void(0)">Pre&#45;order for a Collectible Figurine&#33;<i class="fa fa-caret-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                </div>
+
+                
+              </section> <!-- End catalogue -->
+              <section class="console-pre">
+                <div class="wrap-hpd-1 selective ">
+
+                        <ul class="list-unstyled list-inline opt-product pull-left">
+                            <li><a href="">preorder game</a></li>
+                            <li><a href="">sản phẩm sắp ra mắt</a></li>
+                            <li style="padding: 0px; float: right; background: transparent none repeat scroll 0% 0%;"><a href=""><span class="glyphicon glyphicon-th-list"></span></a></li> <!-- javascript: void(0) -->
+                            <li style="float: right; padding: 0px 5px; background: transparent none repeat scroll 0% 0%;"><a href="javascript: void(0)"><span class="glyphicon glyphicon-th"></span></a></li>
+                        </ul>
+                        <!-- <ul class="list-unstyled list-inline pull-right order">
+                          <li><a href=""><span class="glyphicon glyphicon-th-list"></span></a></li> javascript: void(0)
+                          <li><a href="javascript: void(0)"><span class="glyphicon glyphicon-th"></span></a></li>
+                        </ul>
+  -->            </div>
+
+                <div class="wrap-hpd-2">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                     <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                     <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                     <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                      <div class="box-preorder in-block">
+                          <img src="images/img-preorder.png" alt="not found">
+                          <p>life is strange limited edition steam cd-key global</p>
+                          <div class="box-price">
+                            <div class="price-game">
+                                              <span>300.000đ</span>
+                                              <span>200.000đ</span>
+                                              
+                            </div>
+                            <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                           </div>
+
+                        
+                      </div>
+                    </div>
+                    
+                  
+                  </div>
+                  <div class="row text-center">
+                    <ul class="paginate list-inline">
+                    
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li><a href="#">&raquo;</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </section> <!-- End console-pre -->
+              <div class=""><img alt="not found" src="images/bg-top3.jpg" class="img-responsive"></div>
+              
+              <!-- Pre section hot-product -->
+              <section class="hot-product">
+                    <div class="wrap-hpd-1 ">
+
+                        <ul class="list-unstyled list-inline opt-product">
+                            <li><a href="">sản phẩm giảm giá</a></li>
+                            <li><a href="">sản phẩm hot nhất</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="wrap-hpd-2 row">
+                            <div class="col-md-2 col-md-offset-1 col-sm-6  col-xs-12">
+                              <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-1">
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-2">
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 ">
+                                <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-3">
+                                        
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 ">
+                              <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-4">
+                                        
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-5">
+                                        
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="wrap-hpd-2 row">
+                            <div class="col-md-2 col-md-offset-1 col-sm-6  col-xs-12">
+                              <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-1">
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-2">
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 ">
+                                <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-3">
+                                        
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 ">
+                              <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-4">
+                                        
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-5">
+                                        
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="wrap-hpd-2 row">
+                            <div class="col-md-2 col-md-offset-1 col-sm-6  col-xs-12">
+                              <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-1">
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-2">
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 ">
+                                <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-3">
+                                        
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 ">
+                              <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-4">
+                                        
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                              <div class="box-game col-sm-4 col-xs-6">
+                                    <div class="gallery gal-5">
+                                        
+                                    </div>
+                                    <div class="pd-1650">
+                                        <h4 class="name-game">tom clancy's rainbow six</h4>
+                                        <div class="time-picker"></div>
+                                        <div class="price-game">
+                                            <span>300.000đ</span>
+                                            <span>200.000đ</span>
+                                            
+                                        </div>
+                                        <button class="btn btn-default" type="button"><img alt="not found" src="images/cart-pro.png">đặt hàng</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="row text-center">
+                      <ul class="paginate list-inline">
+                      
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">»</a></li>
+                      </ul>
+                  </div>
+              </section>
+              <!-- End pre section hot pro <-->
+
+              <div class=""><img class="img-responsive" src="images/cgd/banner-ft.jpg" alt="not found"></div>
+
+
+           <section class="center slider">
+            <button type="button" class="slick-prev">Previous</button>
+            <button type="button" class="slick-next">Next</button>
+              <div>
+                <img src="images/lg-brand/activision.png" class="img-responsive" alt="not found">
+              </div>
+               <div>
+                <img src="images/lg-brand/activision.png" class="img-responsive" alt="not found">
+              </div>
+               <div>
+                <img src="images/lg-brand/activision.png" class="img-responsive" alt="not found">
+              </div>
+               <div>
+                <img src="images/lg-brand/activision.png" class="img-responsive" alt="not found">
+              </div>
+               <div>
+                <img src="images/lg-brand/activision.png" class="img-responsive" alt="not found">
+              </div>
+               <div>
+                <img src="images/lg-brand/activision.png" class="img-responsive" alt="not found">
+              </div>
+               <div>
+                <img src="images/lg-brand/activision.png" class="img-responsive" alt="not found">
+              </div>
+               <div>
+                <img src="images/lg-brand/activision.png" class="img-responsive" alt="not found">
+              </div>
+               <div>
+                <img src="images/lg-brand/activision.png" class="img-responsive" alt="not found">
+              </div>
+            </section>
+            <!-- End slick slider -->
+
+
+           
+
+
+           </div>
+
+          <footer>
+            <div class="container-fluid">
+              <div class="container">
+                <div class="main-footer">
+                  <div class="box-20">
+                    <div class="w213">
+                      <h4 class="title-ft">Thông tin</h4>
+                      <ul class="list-unstyled">
+                        <li><a href="">Thông tin</a></li>
+                        <li><a href="">Điều khoản dịch vụ</a></li>
+                        <li><a href="">Về chúng tôi</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="box-20">
+                    <div class="w213">
+                      <h4 class="title-ft">hỗ trợ khách hàng</h4>
+                      <ul class="list-unstyled">
+                        <li><a href="">Hỗ trợ khách hàng</a></li>
+                        <li><a href="">Hướng dẫn mua hàng</a></li>
+                        <li><a href="">Hướng dẫn kích hoạt và tải game</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="box-20">
+                    <div class="w213">
+                      <h4 class="title-ft">tài khoản</h4>
+                      <ul class="list-unstyled">
+                        <li><a href="">Tài khoản</a></li>
+                        <li><a href="">Chính sách đổi thẻ</a></li>
+                        <li><a href="">Lịch sử giao dịch</a></li>
+                        <li><a href="">Số dư tài khoản</a></li>
+                        <li><a href="">Tài khoản của tôi</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="box-20">
+                    <div class="w213">
+                      <h4 class="title-ft">Thông tin</h4>
+                      <ul class="list-unstyled">
+                        <li><a href="">Tài khoản</a></li>
+                        <li><a href="">Chính sách đổi thẻ</a></li>
+                        <li><a href="">Lịch sử giao dịch</a></li>
+                        <li><a href="">Số dư tài khoản</a></li>
+                        <li><a href="">Tài khoản của tôi</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <div class="box-20">
+                    <div class="w213">
+                      <h4 class="title-ft">Thông tin</h4>
+                      <form method="POST">
+                        <div class="form-group">
+                          <label >Địa chỉ email của bạn:</label>
+                          <input type="text" placeholder="Email của bạn" id="info-customer" class="form-control">
+                        </div>
+                      
+                        
+                      
+                        <button class="btn btn-primary" type="submit">Theo dõi</button>
+                      </form>
+                      <ul style="margin:0" class="list-inline list-unstyled"> <!-- INLINE -->
+                        <li><a href=""><img alt="not found" src="images/lg-brand/ico-fb.png"></a></li>
+                        <li><a href=""><img alt="not found" src="images/lg-brand/ico-tumb.png"></a></li>
+                        <li><a href=""><img alt="not found" src="images/lg-brand/ico-rss.png"></a></li>
+                        <li><a href=""><img alt="not found" src="images/lg-brand/ico-tweet.png"></a></li>
+                        <li><a href=""><img alt="not found" src="images/lg-brand/ico-youtube.png"></a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+
+  
+                  
+                </div>
+                <div style="margin-bottom:10px;padding: 0" class="col-md-12"> <!-- INLINE -->
+                    <ul style="margin:0" class="list-inline list-unstyled"> <!-- INLINE -->
+                        <li><a href=""><img alt="not found" src="images/lg-brand/ico-vima.png"></a></li>
+                        <li><a href=""><img alt="not found" src="images/lg-brand/ico-paypal.png"></a></li>
+                        <li><a href=""><img alt="not found" src="images/lg-brand/ico-sofort.png"></a></li>
+                        <li><a href=""><img alt="not found" src="images/lg-brand/ico-amazon.png"></a></li>
+                        <li><a href=""><img alt="not found" src="images/lg-brand/ico-bara.png"></a></li>
+                        <li><a href=""><img alt="not found" src="images/lg-brand/ico-bitcoin.png"></a></li>
+
+                      </ul>
+              </div>
+              
+
+                
+              </div>
+
+              
+
+              
+            </div>
+            <div class="container-fluid bot-ft">
+          
+              <div class="container">
+                <div class="col-md-12">
+                  &#169;Copyright keygamepc.com. website cung cấp game bản quyển, soft ware, phần mềm tại việt nam
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- End footer -->
+
+           
+       </div>
+
+
+
+      
+
+
+
+
+
+
+
+
+<!-- === hover menu === -->
+<script>
+  $(function(){
+    $(".dropdown").hover(            
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                $(this).toggleClass('open');
+                $('b', this).toggleClass("caret caret-up");                
+            });
+    });
+  $(document).on('ready', function() {
+     
+      $(".center").slick({
+        dots: true,
+        infinite: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+      $(".single").slick({
+        dots: true,
+      });
+     
+    });
+
+    /*----------------------------------------------------*/
+    /* Flexslider
+    /*----------------------------------------------------*/
+    $(window).load(function() {
+
+      $('#hero-slider').flexslider({
+        namespace: "flex-",
+        controlsContainer: ".hero-container",
+        animation: 'fade',
+        controlNav: true,
+        directionNav: false,
+        smoothHeight: true,
+        slideshowSpeed: 7000,
+        animationSpeed: 600,
+        randomize: true,
+        arrows: false,
+        // mousewheel: true,
+        prevText: "Previous",          
+        nextText: "Next",
+      
+        before: function(slider){
+         $(slider).find(".animated").each(function(){
+          $(this).removeAttr("class");
+          });         
+      },
+      start: function(slider){
+         $(slider).find(".flex-active-slide")
+                  .find("h1").addClass("animated fadeInDown show")
+                  .next().addClass("animated fadeInUp show");
+                    
+         $(window).trigger('resize');            
+      },
+      after: function(slider){
+        $(slider).find(".flex-active-slide")
+                  .find("h1").addClass("animated fadeInDown show")
+                  .next().addClass("animated fadeInUp show");       
+      }
+     });
+
+     
+    });
+    // adv anchorScroll
+    $(window).scroll(function(){
+
+      // var posOri = element.offset().top;
+      $(".adv-left").stop().animate({"marginTop": ($(window).scrollTop() - 200) + "px", "marginLeft":($(window).scrollLeft()) + "px"}, "slow" );
+      $(".adv-right").stop().animate({"marginTop": ($(window).scrollTop() - 200 ) + "px", "marginRight":($(window).scrollLeft()) + "px"}, "slow" );
+
+    });
+
+
+    
+</script>
+
+<!-- flexslider -->
+<script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- slick slider -->
+<script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+
+</html>
